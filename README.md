@@ -1,12 +1,20 @@
 # Falcon3B-API-Instruct
 
-Fine‑tuned Falcon3‑3B‑Instruct with PEFT‑LoRA to produce consistently structured outputs (domain, api_call, api_provider, explanation, code) aligned to the dataset schema. Emphasis is on correctness of the explanation tag and semantic similarity of code, with notable gains in ROUGE‑L/BERTScore for explanations and CodeBERT similarity for code.
+Fine-tuned Falcon3-3B-Instruct with PEFT-LoRA to produce consistently structured outputs (`domain`, `api_call`, `api_provider`, `explanation`, `code`) aligned to the dataset schema.  
+Emphasis is on correctness of the **explanation** tag and semantic similarity of **code**, with notable gains in **ROUGE-L/BERTScore** for explanations and **CodeBERT similarity** for code.
+
+## 📂 Access to Colab Notebooks
+
+- [`instruct_tuning_2ndepoch.ipynb`](https://colab.research.google.com/drive/16M2li9oQJvfmKxb8QIYTd0rdc9qF8JPn?usp=sharing)  
+- [`instruct_tuning_1stepoch.ipynb`](https://colab.research.google.com/drive/1rUhge5C3CT71O8HjoRBgTIBWhCmnkNYa?usp=sharing)  
+- [`evaluation.ipynb`](https://colab.research.google.com/drive/1vSKdn636fn8_p5ZJukhOn8tfh3veLUwa?usp=sharing)  
+
 
 ## 🚀 Model & Dataset
 
 **Base Model**: `tiiuae/Falcon3-3B-Instruct`  
 **Fine-tuning**: LoRA (Low-Rank Adaptation)  
-**Dataset**: Gorilla API instruction dataset
+**Dataset**: Hugging Face Dataset from Gorilla / API Bench
 
 ### Output Format
 The model generates structured responses with tagged components:
