@@ -45,7 +45,7 @@ tokenizer = AutoTokenizer.from_pretrained('bert-base-uncased')
 
 ## 🎯 Evaluation Metrics
 
-Evaluated on 911 test samples:
+Evaluated on 911 test samples on eval_dataset [`data/hf_eval.jsonl`](data/hf_eval.jsonl):
 
 | Metric | Score | Description |
 |--------|-------|-------------|
